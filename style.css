@@ -126,6 +126,10 @@ body{
 
 .container {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column; 
+    padding: 0;}
+.profile {
+    margin: 30px 30px;
+    }
 }
 
