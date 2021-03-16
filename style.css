@@ -1,6 +1,8 @@
 *{margin: 0;
 padding: 0;
-box-sizing: border-box;}
+box-sizing: border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box; }
 
 body{
     font-size: 17px;    
@@ -182,6 +184,7 @@ h1.appearh1 {
     transition: all .5s ease;
 }
 .gallery {
+    padding-bottom: 20px;
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(4, auto);
