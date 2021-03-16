@@ -169,12 +169,12 @@ h1{
     transition: all .5s ease;
 }
 .gallery {
-    overflow: hidden;
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 20px;}
 
 .imgInGallery{
+    overflow: hidden;
     position: relative;
     height: auto;
     display: flex;
