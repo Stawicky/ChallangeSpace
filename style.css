@@ -400,11 +400,11 @@ footer ul{
         margin: 50px 6%;
     }
     .aboutUsText h2{
-        font-size: 40px;
+        font-size: 35px;
         padding-bottom: 20px;
     }
     .ourCreation h3 {
-        font-size: 40px;
+        font-size: 35px;
     }
     .gallery {
         grid-template-columns: repeat(1, 1fr);
