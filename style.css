@@ -169,6 +169,7 @@ h1{
     transition: all .5s ease;
 }
 .gallery {
+    overflow: hidden;
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 20px;}
@@ -313,9 +314,15 @@ footer ul{
 
     .gallery {
         grid-template-columns: repeat(2, 256px);
-        justify-content: center;}
+        justify-content: center;
+    }
     .galleryinfo {
         justify-content: center;
+    }
+    .descriptionInImg {
+        font-size: 25px;
+        bottom: 20px;
+        left: 30px;
     }
     .desctop {display: none;}
 
@@ -409,7 +416,8 @@ footer ul{
         padding: 40px 6%;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto;
-        grid-gap: 20px;}
+        grid-gap: 20px;
+    }
    .logo-footer, .socialLink, .navbarFooter, .copyright {
        justify-self: center;
    }
