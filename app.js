@@ -28,8 +28,8 @@ burger.addEventListener('click', function(){
 const faders = document.querySelectorAll('.fade-in');
 
 const appearOptions = {
-    threshold: 0.1,
-    rootMargin: "0px 0px 0px 0px"
+    threshold: 0,
+    rootMargin: "0px 0px 0px 100px"
 };
 
 const appearOnScroll = new IntersectionObserver (
