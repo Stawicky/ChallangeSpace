@@ -407,7 +407,8 @@ footer ul{
         font-size: 40px;
     }
     .gallery {
-        grid-template-columns: repeat(1, 1fr);}
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, auto);}
     .seeAll.mobile {
         width: 50%;
         margin: 40px auto 20px;
