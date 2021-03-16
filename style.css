@@ -6,6 +6,14 @@ body{
     font-size: 17px;    
 
 }
+.fade-in {opacity: 0;
+          transform: translateY(150px);
+          transition: opacity 0.4s ease, transform 0.4s ease ;
+        }
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0px);
+}
 header {
     background: url("./images/desktop/image-hero.jpg");
     background-size: cover;
@@ -93,6 +101,11 @@ h1{
     font-weight: 300;
     border: solid 2px white;
     padding: 6% 6%;
+    transform: translateX(-100px);
+    transition: transform 0.5s ease;
+}
+h1.appearh1 {
+    transform: translateX(0);
 }
 /*          1 SECTION ABOUT US             */
 .aboutUs{
@@ -169,12 +182,12 @@ h1{
     transition: all .5s ease;
 }
 .gallery {
+    overflow: hidden;
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 20px;}
 
 .imgInGallery{
-    overflow: hidden;
     position: relative;
     height: auto;
     display: flex;
@@ -344,7 +357,12 @@ footer ul{
         overflow: hidden;
         height: 100vh;
     }
+    .logonav {
+        position: relative;
+        z-index: 4;
+    }
     .nav-links {
+        z-index: 1;
         transform: translateX(100%);
         justify-content: center;
         width: 100%;

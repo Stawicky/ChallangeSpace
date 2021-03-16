@@ -23,3 +23,45 @@ burger.addEventListener('click', function(){
     navmenu.classList.toggle('menuactive')
     burger.classList.toggle('closeburger')
 })
+
+//fadein
+const faders = document.querySelectorAll('.fade-in');
+
+const appearOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px 0px 0px"
+};
+
+const appearOnScroll = new IntersectionObserver (
+    function(entries, appearOnScroll) {
+        entries.forEach(entry => {
+            if(!entry.isIntersecting){
+                return;
+            }
+            else {
+                entry.target.classList.add('appear');
+                appearOnScroll.unobserve(entry.target);
+            }
+        })
+},
+ appearOptions);
+
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+})
+
+const h1 = document.querySelector('h1');
+
+const showh1 = new IntersectionObserver (function(entries, showh1) {
+    entries.forEach(entry => {
+        if(!entry.isIntersecting) {
+            return;
+        }
+        else {
+            entry.target.classList.add('appearh1');
+            showh1.unobserve(entry.target);
+        }
+    })
+    
+}, appearOptions);
+showh1.observe(h1);
